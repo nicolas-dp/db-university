@@ -14,7 +14,7 @@ SELECT * FROM `courses` WHERE cfu > 10;
 
 3. Selezionare tutti gli studenti che hanno più di 30 anni (3400)
 
-SELECT * FROM `students` WHERE `date_of_birth` < '1992-06-01';
+SELECT * FROM `students` WHERE `date_of_birth` < CURDATE();
 
 
 
@@ -40,7 +40,7 @@ SELECT * FROM `degrees` WHERE `level` = 'magistrale';
 
 7. Da quanti dipartimenti è composta l'università? (12)
 
-SELECT COUNT(*) FROM departments;
+SELECT COUNT(*) AS `numero di dipartimenti` FROM departments;
 
 
 
